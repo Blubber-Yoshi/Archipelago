@@ -43,7 +43,7 @@ locspecialstages_table: dict[str, SMGLocationData]  = {
     "HC: Scaling the Sticky Wall": SMGLocationData(["Honeyclimb Galaxy", "Power Star"], regname.HONEYCLIMB, 170000118, game_address=0),
     "BB: The Floating Fortress": SMGLocationData(["Buoy Base Galaxy", "Power Star"], regname.BUOY, 170000017, game_address=0),
     "BB: The Secret of Buoy Base": SMGLocationData(["Buoy Base Galaxy", "Power Star"], regname.BUOY, 170000018, game_address=0),
-  # TO DO ADD BACK WHEN MORE THEN ONE CHECK IN FIRST LEVEL , REQUIRES GOAL FOR REVIST
+    #TODO: FIX duplicate abbreviation 
     "GG: Grand Star Rescue": SMGLocationData([regname.GATEWAY, "Power Star"], regname.GATEWAY, 170000019, game_address=0),
     "BF: Kingfin's Fearsome Waters": SMGLocationData(["Bonefin Galaxy", "Power Star"], regname.BONEFIN, 170000021, game_address=0),
     "MS: Watch Your Step": SMGLocationData(["Matter Splatter Galaxy", "Power Star"], regname.MATTER, 170000022, game_address=0),
@@ -77,7 +77,7 @@ locBR_table: dict[str, SMGLocationData]  = {
     "BR: Topmanic's Dardevil Run": SMGLocationData(["Battlerock Galaxy", "Power Star"], regname.BATTLEROCK, 170000040, game_address=4),
     "BR: Luigi under the Saucer": SMGLocationData(["Battlerock Galaxy", "Power Star"], regname.BATTLEROCK, 170000042, game_address=5)
 }
-
+#TODO: note change abbreviation same as buoy base
 locBB_table: dict[str, SMGLocationData]  = {
     "BB: Sunken Treasure": SMGLocationData(["Beach Bowl Galaxy", "Power Star"], regname.BEACHBOWL, 170000043, game_address=0),
     "BB: Passing the Swim Test": SMGLocationData(["Beach Bowl Galaxy", "Power Star"], regname.BEACHBOWL, 170000044, game_address=1),
@@ -126,7 +126,7 @@ locGL_table: dict[str, SMGLocationData]  = {
     "GL: Cosmic Mario Forest Race": SMGLocationData(["Gold Leaf Galaxy", "Power Star"], regname.GOLDLEAF, 170000077, game_address=3),
     "GL: The Bell on the Big Trees": SMGLocationData(["Gold Leaf Galaxy", "Power Star"], regname.GOLDLEAF, 170000079, game_address=4)
 }
-
+#TODO: Change abbrivation
 locSS_table: dict[str, SMGLocationData]  = {
     "SS: Going After Guppy": SMGLocationData(["Sea Slide Galaxy", "Power Star"], regname.SEASLIDE, 170000080, game_address=0),
     "SS: Faster Than a Speedrunning Penguin": SMGLocationData(["Sea Slide Galaxy", "Power Star"], regname.SEASLIDE, 170000081, game_address=1),
@@ -169,12 +169,12 @@ locMM_table: dict[str, SMGLocationData]  = {
 
 locHL_table: dict[str, SMGLocationData]  = {
     "SS: Rocky Road": SMGLocationData(["Sweet Sweet Galaxy", "Power Star"], regname.SWEETSWEET, 170000110, game_address=0),
-    "SP: A Very Sticky Situation": SMGLocationData(["Sling Pod Galaxy", "Power Star"], regname.SLINGPOD, 170000111, game_address=1),
-    "DDR: Giant Eel Breakout": SMGLocationData(["Drip Drop Galaxy", "Power Star"], regname.DRIPDROP, 170000112, game_address=2),
-    "BM: Bigmouth's Gold Bait": SMGLocationData(["Bigmouth Galaxy", "Power Star"], regname.BIGMOUTH, 170000113, game_address=3),
-    "Sandy Spiral: Choosing a Favorite Snack": SMGLocationData(["Sand Spiral Galaxy", "Power Star"], regname.SANDSPIRAL, 170000114, game_address=4),
-    "Bone's Boneyard: Racing the Spooky Speedster": SMGLocationData(["Boo's Boneyard Galaxy", "Power Star"], regname.BOOBONE, 170000115, game_address=5),
-    "SC: Star Bunnies in the Snow": SMGLocationData(["Snow Cap Galaxy", "Power Star"], regname.SNOWCAP, 170000116, game_address=6)
+    "SP: A Very Sticky Situation": SMGLocationData(["Sling Pod Galaxy", "Power Star"], regname.SLINGPOD, 170000111, game_address=0),
+    "DDR: Giant Eel Breakout": SMGLocationData(["Drip Drop Galaxy", "Power Star"], regname.DRIPDROP, 170000112, game_address=0),
+    "BM: Bigmouth's Gold Bait": SMGLocationData(["Bigmouth Galaxy", "Power Star"], regname.BIGMOUTH, 170000113, game_address=0),
+    "Sandy Spiral: Choosing a Favorite Snack": SMGLocationData(["Sand Spiral Galaxy", "Power Star"], regname.SANDSPIRAL, 170000114, game_address=0),
+    "Bone's Boneyard: Racing the Spooky Speedster": SMGLocationData(["Boo's Boneyard Galaxy", "Power Star"], regname.BOOBONE, 170000115, game_address=0),
+    "SC: Star Bunnies in the Snow": SMGLocationData(["Snow Cap Galaxy", "Power Star"], regname.SNOWCAP, 170000116, game_address=0)
 }
 
 locPC_table: dict[str, SMGLocationData]  = {
@@ -188,6 +188,7 @@ locPC_table: dict[str, SMGLocationData]  = {
     "BR: Purple Coins on the Battlerock": SMGLocationData(["Battlerock Galaxy", "Power Star", "Purple Coins"], regname.BATTLEROCK, 17000121, game_address=5),
     "SJ: Purple Coin Spacewalk": SMGLocationData(["Space Junk Galaxy", "Power Star", "Purple Coins"], regname.SPACEJUNK, 170000036, game_address=5),
     "GG: Purple Coins on the Puzzle Cube": SMGLocationData(["Gusty Garden Galaxy", "Power Star", "Purple Coins"], regname.GUSTY, 170000059, game_address=5),
+    # TODO: change abbreviation for galaxy
     "BB: Beachcombing for Purple Coins": SMGLocationData(["Bubble Breeze Galaxy", "Power Star", "Purple Coins"], regname.BUBBLEBREEZE, 170000047, game_address=5),
     "FF: Purple Coins on the Summit": SMGLocationData(["Freezeflame Galaxy", "Power Star", "Purple Coins"], regname.FREEZEFLAME, 170000066, game_address=5),
     "G: Purple Coins in the Bone Pen": SMGLocationData([regname.GHOSTLY, "Power Star", "Purple Coins"], regname.GHOSTLY, 170000053, game_address=5),

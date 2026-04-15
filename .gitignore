@@ -32,6 +32,9 @@
 *.apsave
 *.BIN
 *.puml
+*.iso
+*.arc
+/temp/
 
 setups
 build
@@ -199,3 +202,4 @@ _speedups.html
 .LSOverride
 Thumbs.db
 [Dd]esktop.ini
+/SMG_region_graph
